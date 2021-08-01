@@ -1,0 +1,12 @@
+<textarea  [formControl]="textarea" placeholder="Enter your text here..."></textarea>
+  <div class="row text-center">
+      <div class="col-3"  *ngFor="let item of outputText | keyvalue : valueDescOrder">
+          <div>
+            {{item.key}}
+          </div>
+          <div>
+            {{item.value}}
+          </div>
+    </div>
+  </div>
+
